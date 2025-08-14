@@ -16,7 +16,7 @@ export default function Home() {
         files.forEach((file) => formData.append("images", file));
 
         try {
-            const response = await axios.post("http://localhost:5000/convert", formData, {
+            const response = await axios.post("https://pdf-converter-backend-1.onrender.com/convert", formData, {
                 responseType: "blob",
             });
 
